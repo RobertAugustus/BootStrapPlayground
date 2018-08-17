@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Credit to W3schools.com for helpful bootstrap example code -->
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Collapsible Navbar <small>(Hamburger menu on small screens)</small></h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+</div>
+
+<div class="container-fluid text-center">
+  <h2>Text Examples</h2>
+  <div class="row">
+    <div class="col-xs-4">
+      <h3 class="bg-primary">Column 1</h3>
+      <p class="text-primary">Lorem ipsum dolor..</p>
+      <p class="text-muted">Ut enim ad..</p>
+    </div>
+    <div class="col-xs-4">
+      <h3 class="bg-success">Column 2</h3>
+      <p class="text-success">Lorem ipsum dolor..</p>
+      <p class="text-info">Ut enim ad..</p>
+    </div>
+    <div class="col-xs-4">
+      <h3 class="bg-danger">Column 3</h3> 
+      <p class="text-warning">Lorem ipsum dolor..</p>
+      <p class="text-danger">Ut enim ad..</p>
+    </div>
+  </div>
+</div>
+  
+<div class="container-fluid text-center">
+  <h3>Notes</h3>
+  <div class="danger">
+    <p><strong>Danger!</strong> Some text...</p>
+  </div>
+  <div class="success">
+    <p><strong>Success!</strong> Some text...</p>
+  </div>
+  <div class="info">
+    <p><strong>Info!</strong> Some text...</p>
+  </div>
+  <div class="warning">
+    <p><strong>Warning!</strong> Some text...</p>
+  </div>  
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well">
+        <ol>
+          <li><mark>One</mark> is the loneliest number</li>
+          <li><del>Two</del> is just as lonely as one</li>
+          <li class="text-capitalize">Three is enough for a fee</li>
+        </ol>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well">
+        <ul>
+          <li><kbd>First</kbd> element for testing</li>
+          <li><samp>Second element for testing</samp></li>
+          <li><code>Third</code> element for testing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="container-fluid">
+  <h2 class="text-center">Input Group Form</h2>
+  <form action="/action_page.php">
+    <div class="input-group col-xs-4 col-xs-offset-4">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="input-group col-xs-4 col-xs-offset-4">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <br>
+    <div class="input-group col-xs-4 col-xs-offset-4">
+      <span class="input-group-addon">Text</span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">  
+    </div>
+    <div class="checkbox">
+      <center><label><input type="checkbox" name="remember">
+        Remember me</label></center>
+    </div>
+    <center><button type="submit" class="btn btn-default">Submit</button></center>
+    
+  </form>
+</div>
+
+<div class="container">
+  <h2 class="text-center">Table<small> (highlights active element)</small></h2>
+  <p class="text-center">The .active .success .danger class applies the hover color to a particular row or cell:</p> 
+  <div class="table-responsive">             
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td>1</td>
+        <td>Anna</td>
+      </tr>
+      <tr class="success">
+        <td>2</td>
+        <td>Debbie</td>
+      </tr>
+      <tr class="danger">
+        <td>3</td>
+        <td>John</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+  
+<div class="container-fluid text-center">
+  <h2>Responsive Image</h2>
+      <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>
+      <img src="https://news-cdn.softpedia.com/images/news2/Sea-Otters-Found-to-Have-Recovered-from-the-1989-Exxon-Valdez-Oil-Spill-430382-2.jpg" class="col-lg-12 center-block img-rounded img-responsive" alt="white otter belly-up">
+  <div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-primary">Like</a>
+    <a href="#" class="btn btn-success">Share</a>
+    <a href="#" class="btn btn-danger">Delete</a>
+  </div>
+</div>
+
+<br>
+<div class="container text-center">
+  <h2>Glyphicon Examples</h2>
+    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>    
+    <p>Envelope icon as a link:
+      <a href="#">
+        <span class="glyphicon glyphicon-envelope"></span>
+      </a>
+    </p>
+    <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+    <p>Search icon on a button:
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span>
+        Search
+      </button>
+    </p>
+    <p>Search icon on a styled button:
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-search"></span>
+        Search
+      </button>
+    </p>
+    <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
+    <p>Print icon on a styled link button:
+      <a href="#" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-print"></span>
+        Print 
+      </a>
+    </p> 
+    <p>Upvote icon on a styled link button:
+      <a href="#" class="btn btn-primary btn-lg">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        Upvote <span class="badge">+1</span>
+      </a>
+    </p>
+    <p>Downvote icon on a styled link button:
+      <a href="#" class="btn btn-danger btn-lg">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        Downvote <span class="badge">-1</span>
+      </a>
+    </p>
+</div>
+  
+<br>
+<div class="container-fluid text-center">
+  <h2>Label Examples <small>uses element size</small></h2>
+    <h3>Example <span class="label label-default">Article</span></h3>
+    <h4>Example <span class="label label-success">New</span></h4>
+    <h5>Example <span class="label label-warning">Edited</span></h5>
+    <h6>Example <span class="label label-danger">Danger!</span></h6>
+</div>
+
+<br>
+<div class="container text-center">
+  <h2>Nesting Button Groups</h2>
+  <p>Nest button groups to create drop down menus:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Option 1</button>
+    <button type="button" class="btn btn-primary">Option 2</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Selector <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Selection 1</a></li>
+        <li><a href="#">Selection 2</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
+<br>
+<div class="container">
+  <h3>Tabs with Dropdown Menu</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1-1</a></li>
+        <li><a href="#">Submenu 1-2</a></li>
+        <li><a href="#">Submenu 1-3</a></li>                        
+      </ul>
+    </li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+
+
+<div class="container">
+  <h3>Dynamic Tabs</h3>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>  
+
+  
+<hr>  
+<div class="container">
+  <h3>Centered Tabs</h3>
+  <p>To center/justify the tabs and pills, use the .nav-justified class. Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered).</p>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <br>
+  <h3>Centered Pills</h3>
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>  
+
+<div class="container">
+  <h3>Media Object <small>for profile pictures</small></h3>
+  <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
+  <div class="media">
+    <div class="media-left">
+      <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Left-aligned</h4>
+      <p>Hello my comment would normally appear here.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Right-aligned media object -->
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">Right-aligned</h4>
+      <p>Hello my comment would appear here.</p>
+    </div>
+    <div class="media-right">
+      <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+  </div>
+</div>
+  
+<div class="container">
+  <h3>Form control: textarea</h3>
+  <p>The form below contains a textarea for comments:</p>
+  <form>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="2" id="comment"></textarea>
+      <center><button type="submit" class="btn btn-default">Submit</button></center>
+    </div>
+  </form>
+</div>
+  
+<br>  
+<div class="container-fluid text-center">
+  <h3 class="text-primary">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>JavaScript Progress Bar</h3>
+  <div id="myProgress">
+    <div id="myBar">10%</div>
+    </div>
+  <br>
+  <center><button onclick="move()">Click Me</button><center>
+</div>
+    
